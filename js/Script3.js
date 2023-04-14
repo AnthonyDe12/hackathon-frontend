@@ -1,6 +1,4 @@
 
-var category = window.prompt("enter catagory")
-
 const ctx = document.getElementById('myChart');
 
 
@@ -42,6 +40,11 @@ fetch('http//:localhost:8080/bank_data')
     .then(Response => Response.json())
     .then(data => console.log(data))
     .catch(error => console.error(error))
+
+
+
+
+
 
 
 
