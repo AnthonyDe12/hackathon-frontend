@@ -1,5 +1,8 @@
 
+var category = window.prompt("enter catagory")
+
 const ctx = document.getElementById('myChart');
+
 
 new Chart(ctx, {
   type: 'doughnut',
@@ -11,18 +14,20 @@ new Chart(ctx, {
       borderWidth: 1
     }]
   },
+  
   options: {
     scales: {
         y: {
-            beginAtZero: true,
-            ticks:{
-                display:false
-            },
-            grid: {
-                display: false,
-                drawTicks: false
-            }
-          }
+        beginAtZero: true,
+        ticks:{
+            display:false
+        },
+        grid: {
+            display: false,
+            drawTicks: false
+        }
+      }
+
     }
   }
 });
@@ -39,4 +44,6 @@ fetch('http//:localhost:8080/bank_data')
     .catch(error => console.error(error))
 
 
-    
+
+
+

@@ -6,13 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple website</title>
     <link rel="stylesheet" href="main.css">
-
+    <style class="type/css">
+      .chartBox {
+        width: 300px;
+      }
+      </style>
+  <div class=checkingBlock>
+    <h4 id="checkingInfo">
+      <li id="checking1">
+        Checking Amount:
+      </li>
+      <li id="savings1">
+        Savings Amount:
+      </li>   
+    </h4>
+  </div>
+  <div class=checkingBlock>
+    <h4 id="creditInfo">
+      <li id="credit">
+        Credit Card Amount:
+      </li> 
+    </h4>
+  </div>
     <script src="path/to/chartjs/dist/chart.umd.js"></script>
     <script src= "https://cdn.jsdelivr.net/npm/chart.js"></script>
   </head>
   <body>
-    <div>
-      <canvas id="myChart"></canvas>
+    <label>"enter your name"</label><br>
+    <input type="text" id="myText"><br>
+    <button type="button" id="mybutton">submit</button>
+    <div class="chartBox">
+    <canvas id="myChart"></canvas>
+    <label>"enter your name"</label><br>
+    <input type="text" id="myText"><br>
+    <button type="button" id="mybutton">submit</button>
+    <div class="chartBox">
+    <canvas id="myChart"></canvas>
     </div>
     <script src="./js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>

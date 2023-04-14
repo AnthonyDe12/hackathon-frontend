@@ -1,0 +1,15 @@
+html {
+    display: table;
+}
+li {
+  list-style-type: none;
+}
+.checkingBlock {
+  background-color: lightgray;
+  border: 5px solid black;
+  padding: 0px;
+  margin: 0px;
+  border-style:ridge;
+  width: 300px;
+  display:inline-block;
+}
